@@ -5,9 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML + CSS</title>
-    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Hi this is for test </h1>
+    <div class="glowing">
+      <span style="--i: 1;"></span>
+      <span style="--i: 2;"></span>
+      <span style="--i: 3;"></span>
+    </div>
+
+    <div class="glowing">
+      <span style="--i: 1;"></span>
+      <span style="--i: 2;"></span>
+      <span style="--i: 3;"></span>
+    </div>
+
+    <div class="glowing">
+      <span style="--i: 1;"></span>
+      <span style="--i: 2;"></span>
+      <span style="--i: 3;"></span>
+    </div>
+
+    <div class="glowing">
+      <span style="--i: 1;"></span>
+      <span style="--i: 2;"></span>
+      <span style="--i: 3;"></span>
+    </div>
+    <div class="content">
+      <div onclick="openpage('v')" class="box">
+        <img
+          src="https://i.ytimg.com/vi/kPA0kzN5vRg/maxresdefault.jpg"
+          alt="Image 1"
+        />
+        <h2>Screw Gauge</h2>
+      </div>
+      <div onclick="openpage('s')" class="box">
+        <img
+          src="https://media.istockphoto.com/vectors/vernier-caliper-isolated-on-white-vector-id466178137?k=6&m=466178137&s=612x612&w=0&h=5koIi_G7TlgisgSsobpkI1KnkJxmrQP3oxpV1hs32UE="
+          alt="Image 2"
+        />
+        <h2>Vernier Calliper</h2>
+      </div>
+    </div>
+    <script>
+      function openpage(x) {
+        if (x == "v") {
+          window.location.href = "/experiments/vernier_calliper.html";
+        } else {
+          window.location.href = "/experiments/screwgauge.html";
+        }
+      }
+    </script>
   </body>
 </html>
